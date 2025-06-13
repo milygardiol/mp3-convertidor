@@ -93,6 +93,7 @@ def descargar_mp3():
     except Exception as e:
         actualizar_progreso(0, "Error")
         messagebox.showerror("Error", f"Ocurrió un error:\n{str(e)}")
+        print(f"Error: {e}")
 
 # Interfaz gráfica con Tkinter
 ventana = tk.Tk()
